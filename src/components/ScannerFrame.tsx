@@ -4,16 +4,12 @@ import { View, StyleSheet } from 'react-native';
 const ScannerFrame = () => {
   return (
     <View style={styles.container}>
-      {/* Top Left */}
       <View style={[styles.corner, styles.topLeft]} />
 
-      {/* Top Right */}
       <View style={[styles.corner, styles.topRight]} />
 
-      {/* Bottom Left */}
       <View style={[styles.corner, styles.bottomLeft]} />
 
-      {/* Bottom Right */}
       <View style={[styles.corner, styles.bottomRight]} />
     </View>
   );
@@ -21,10 +17,10 @@ const ScannerFrame = () => {
 
 export default ScannerFrame;
 
-const SIZE = 260;        // tamanho do quadrado
-const CORNER = 30;      // tamanho do canto
-const BORDER = 4;       // espessura da linha
-const COLOR = '#fff';   // cor da borda
+const SIZE = 260;        
+const CORNER = 30;     
+const BORDER = 4;       
+const COLOR = '#fff';   
 
 const styles = StyleSheet.create({
   container: {

@@ -11,7 +11,6 @@ type ExibitionProps = {
 }
 
 const ExibitionScreen: React.FC = () => {
-    const [loading, setLoading] = useState(true)
     const route = useRoute<RouteProp<{params: ExibitionProps}, 'params'>>();
     const { data } = route.params
 

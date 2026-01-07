@@ -3,7 +3,6 @@ import { SafeAreaView } from "react-native-safe-area-context"
 import styles from "../styles/homescreenstyle"
 import ButtonQRCode from "../components/ButtonQRCode"
 import { useCameraPermission } from "../hooks/useCameraPermission"
-import { test } from "../hooks/useQRCodeScan"
 
 const HomeScreen: React.FC = ({navigation}: any) => {
 

@@ -14,15 +14,3 @@ export const useQRCodeScan = async (navigation: any, value: string) => {
     navigation.navigate("ExibitionScreen", {data: data})
 
   };
-
-  export const test = async (navigation: any, id: number = 24) =>{
-    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
-    if(!response.ok){
-      throw new Error('Erro na requisição');
-    }
-
-    const data = await response.json();
-
-    navigation.navigate("ExibitionScreen", {data: data})
-
-  }
